@@ -1,0 +1,36 @@
+services:
+  hfs:
+    image: rejetto/hfs:v0.53.0
+    hostname: HFS3 # Set container hostname
+    mac_address: 02:42:c0:a8:02:D4 # Optinal Set custom MacVlan MAC Address Example...
+    volumes:
+      - /mnt/user/appdata/hfs-docker/hfsconf:/home/hfs/.hfs # for hfs conf persistence
+      - /mnt/user/:/app/myDisk # for your files that you want to share
+      - /mnt/user/appdata/hfs-docker/certs:/app/certs # for HTTPS certificates
+      - /mnt/user/appdata/hfs-docker/logs:/app/logs # for log files
+    environment:
+      - HFS_PORT=80 # default is 80
+      - HFS_CREATE_ADMIN=P@ssw0rd # will create the admin user passwrd
+      - HFS_CERT=/app/certs/cert.pem # path to HTTPS certificate
+      - HFS_PRIVATE_KEY=/app/certs/privkey.pem # path to HTTPS private key
+      - HFS_LOG=/app/logs/access.log # path to access log file
+      - HFS_ERROR_LOG=/app/logs/error.log # path to error log file
+      - HFS_LOG_ROTATION=weekly # log rotation frequency
+      - HFS_HTTPS_PORT=443 # https port configuration
+      - HFS_FORCE_HTTPS=true # force HTTPS traffic
+      - HFS_ADMIN_NET=192.168.2.0/24 # limit admin access to local network
+    ports: 
+      - 80:80
+      - 8080:8080
+    networks:
+      bond0: #confirm your Unriad Network
+        ipv4_address: 192.168.2.50 #Set a static IP
+    labels: #Unraid Docker Compose
+      net.unraid.docker.webui: http://[IP]:[PORT:80]/~/admin/
+      net.unraid.docker.icon: '/mnt/user/Dockers/hfs-docker/hfs.png'
+      folder.view: hfs-docker
+      net.unraid.docker.managed: 'composeman'
+
+networks:
+  bond0: #Use Unraid MacVlan as a Network Option...
+    external: true
