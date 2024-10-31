@@ -27,6 +27,6 @@ cd hfs-docker
 5. Start the docker by clicking compose up
    - Setup HFS by adding Https Certs. and a volume to share within HFS.
 ```
-openssl req -x509 -newkey rsa:4096 -keyout /mnt/user/appdata/hfs-docker/certs/privkey.pem -out /mnt/user/appdata/hfs-docker/certs/cert.pem -days 365 -nodes
+openssl req -x509 -newkey rsa:4096 -keyout /mnt/user/appdata/hfs-docker/certs/pself.key -out /mnt/user/appdata/hfs-docker/certs/cert.pem -days 365 -nodes
 ```
 6. Review HFS Support on github: https://github.com/rejetto/hfs/discussions
