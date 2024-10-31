@@ -25,8 +25,13 @@ cd hfs-docker
 4. Edit Stack > Compse File and fix / update volume mounts for your instance.
 
 5. Start the docker by clicking compose up
-   - Setup HFS by adding Https Certs. and a volume to share within HFS.
+   - Setup HFS by adding Https Certs(ATM setup will use self signed certs created at first launch). Then add volume to share over HFS VFS system.
 ```
 openssl req -x509 -newkey rsa:4096 -keyout /mnt/user/appdata/hfs-docker/certs/pself.key -out /mnt/user/appdata/hfs-docker/certs/cert.pem -days 365 -nodes
 ```
+
+![image](https://github.com/user-attachments/assets/abec5b56-3d1c-4d1b-947c-c2160d95b728)
+
+
 6. Review HFS Support on github: https://github.com/rejetto/hfs/discussions
+7. Review unraid Docekr Support on Unraid: WIP
