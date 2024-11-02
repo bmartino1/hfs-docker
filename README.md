@@ -18,34 +18,39 @@ The default hfs cwd of the container is `/home/hfs/.hfs`
 cd /mnt/user/appdata
 git clone https://github.com/bmartino1/hfs-docker.git
 cd hfs-docker
+chmod -R 777 *
 ```
 3. Unraid Web Ui > Docker Tab
    - Add New Stack > Click Advance and set the path: /mnt/user/appdata/hfs-docker
 
 4. Edit Stack > Compse File and fix / update volume mounts for your instance.
+   - Fix Networking As you should use this docker with your exisiing MacVlan/IPVlan set to your br0/boind0/eth0 the interface as outlined in the compose file
 
-5. Start the docker by clicking compose up
+5. Start the docker by clicking compose up in the WebUI
+
    - Setup HFS by adding Https Certs(ATM setup will use self signed certs created at first launch). Then add volume to share over HFS VFS system.
-   - Fix Netwroking As you should use this docker with your exisiing MacVlan/IPVlan 
 
-Termianl Cert Example command to make your own self signed certificate
- 
+   - Example command to make your own self signed certificate
+
 ```
 openssl req -x509 -newkey rsa:4096 -keyout /mnt/user/appdata/hfs-docker/certs/pself.key -out /mnt/user/appdata/hfs-docker/certs/cert.pem -days 365 -nodes
 ```
 
-WIP:
+   - Setup HFS VFS by adding the contienr path /app/myDisk to the source 
 ![image](https://github.com/user-attachments/assets/abec5b56-3d1c-4d1b-947c-c2160d95b728)
 
+WIP for a docker varaible: https://github.com/rejetto/hfs/discussions/792 
+
 6. Review HFS Support on github: https://github.com/rejetto/hfs/discussions
-7. Review unraid Docekr Support on Unraid: WIP
+7. Review unraid Docker Support on Unraid: WIP (?UnRaid Forum link Comming Soon?)
 
-## Comunity App Store XML
+##UnRaid Comunity App Store and XML
 WIP
-CA Own repository: https://github.com/bmartino1/RejetoHFS3
+Many Thanks to Squid and GrtGbln in there help and expertisse in this matter!
 
+CA Own repository: https://github.com/bmartino1/RejetoHFS3
 WIP:
 Self Hosters: 
-A PR has been created via repo https://github.com/bmartino1/unRAID-CA-templates
+A PR( https://github.com/selfhosters/unRAID-CA-templates/pull/531 ) has been created via repo https://github.com/bmartino1/unRAID-CA-templates
 for https://github.com/selfhosters/unRAID-CA-templates
-https://github.com/selfhosters/unRAID-CA-templates/pull/531
+
