@@ -24,7 +24,7 @@ chmod -R 777 *
    - Add New Stack > Click Advance and set the path: /mnt/user/appdata/hfs-docker
 
 4. Edit Stack > Compse File and fix / update volume mounts for your instance.
-   - Fix Networking As you should use this docker with your exisiing MacVlan/IPVlan set to your br0/boind0/eth0 the interface as outlined in the compose file
+   - Fix Networking As you should use this docker with your exisiing MacVlan/IPVlan set to your br0/bond0/eth0 the interface as outlined in the compose file
 
 5. Start the docker by clicking compose up in the WebUI
 
