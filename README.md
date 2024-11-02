@@ -26,12 +26,16 @@ cd hfs-docker
 
 5. Start the docker by clicking compose up
    - Setup HFS by adding Https Certs(ATM setup will use self signed certs created at first launch). Then add volume to share over HFS VFS system.
+   - Fix Netwroking As you should use this docker with your exisiing MacVlan/IPVlan 
+
+Termianl Cert Example command to make your own self signed certificate
+ 
 ```
 openssl req -x509 -newkey rsa:4096 -keyout /mnt/user/appdata/hfs-docker/certs/pself.key -out /mnt/user/appdata/hfs-docker/certs/cert.pem -days 365 -nodes
 ```
 
+WIP:
 ![image](https://github.com/user-attachments/assets/abec5b56-3d1c-4d1b-947c-c2160d95b728)
-
 
 6. Review HFS Support on github: https://github.com/rejetto/hfs/discussions
 7. Review unraid Docekr Support on Unraid: WIP
