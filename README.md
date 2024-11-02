@@ -46,7 +46,7 @@ WIP for a docker varaible: https://github.com/rejetto/hfs/discussions/792
 6. Review HFS Support on github: https://github.com/rejetto/hfs/discussions
 7. Review unraid Docker Support on Unraid: WIP (?UnRaid Forum link Comming Soon?)
 
-##UnRaid Comunity App Store and XML
+## UnRaid Comunity App Store and XML
 WIP
 Many Thanks to Squid and GrtGbln in there help and expertisse in this matter!
 
