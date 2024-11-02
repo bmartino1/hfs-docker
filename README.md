@@ -38,7 +38,8 @@ openssl req -x509 -newkey rsa:4096 -keyout /mnt/user/appdata/hfs-docker/certs/ps
 ![image](https://github.com/user-attachments/assets/f4b55378-6bb2-4a22-93db-2ea1986c12d8)
 ![image](https://github.com/user-attachments/assets/0e3a8112-84af-4ad9-becf-273c5c712494)
 
-   - Setup HFS VFS by adding the contienr path /app/myDisk to the source 
+   - Setup HFS VFS by adding files and setting the path /app/myDisk to the Main VFS Source
+
 ![image](https://github.com/user-attachments/assets/abec5b56-3d1c-4d1b-947c-c2160d95b728)
 ![image](https://github.com/user-attachments/assets/8e89eb1f-20b5-4b58-873e-a7e9d97e5404)
 WIP for a docker varaible: https://github.com/rejetto/hfs/discussions/792 
