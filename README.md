@@ -28,7 +28,7 @@ chmod -R 777 *
 
 5. Start the docker by clicking compose up in the WebUI
 
-   - Setup HFS by adding Https Certs(ATM setup will use self signed certs created at first launch). Then add volume to share over HFS VFS system.
+   - Setup HFS Frist Run by adding Https Certs and Files (ATM setup requirees End User to make a self signed certs created in admin interface or by generating one before first launch). After HTTPS Certificate is created The End User will Then need to add the /app/MyDisk volume to share over HFS VFS system.
 
    - Example command to make your own self signed certificate
 
