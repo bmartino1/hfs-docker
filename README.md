@@ -35,3 +35,13 @@ openssl req -x509 -newkey rsa:4096 -keyout /mnt/user/appdata/hfs-docker/certs/ps
 
 6. Review HFS Support on github: https://github.com/rejetto/hfs/discussions
 7. Review unraid Docekr Support on Unraid: WIP
+
+## Comunity App Store XML
+WIP
+CA Own repository: https://github.com/bmartino1/RejetoHFS3
+
+WIP:
+Self Hosters: 
+A PR has been created via repo https://github.com/bmartino1/unRAID-CA-templates
+for https://github.com/selfhosters/unRAID-CA-templates
+https://github.com/selfhosters/unRAID-CA-templates/pull/531
