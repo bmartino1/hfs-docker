@@ -24,11 +24,11 @@ chmod -R 777 *
    - Add New Stack > Click Advance and set the path: /mnt/user/appdata/hfs-docker
 
 4. Edit Stack > Compse File and fix / update volume mounts for your instance.
-   - Fix Networking As you should use this docker with your exisiing MacVlan/IPVlan set to your br0/bond0/eth0 the interface as outlined in the compose file
+   - Fix Networking As you should use this docker with your existing MacVlan/IPVlan set to your br0/bond0/eth0 the interface as outlined in the compose file
 
 5. Start the docker by clicking compose up in the WebUI
 
-   - Setup HFS Frist Run by adding Https Certs and Files (ATM setup requirees End User to make a self signed certs created in admin interface or by generating one before first launch). After HTTPS Certificate is created The End User will Then need to add the /app/MyDisk volume to share over HFS VFS system.
+   - Setup HFS, First Run by adding Https Certs and Files (ATM setup requirees End User to make a self signed certs created in admin interface or by generating one before first launch). After HTTPS Certificate is created The End User will Then need to add the /app/MyDisk volume to share over HFS VFS system.
 
    - Example command to make your own self signed certificate
 
