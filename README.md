@@ -48,12 +48,7 @@ WIP for a docker varaible: https://github.com/rejetto/hfs/discussions/792
 7. Review unraid Docker Support on Unraid: WIP (?UnRaid Forum link Comming Soon?)
 
 ## UnRaid Comunity App Store and XML
-WIP
-Many Thanks to Squid and GrtGbln in there help and expertisse in this matter!
+Rejetto HFS 3 exist on the unraid App Store
+See the Repository: https://github.com/bmartino1/unraid-docker-templates
 
-CA Own repository: https://github.com/bmartino1/RejetoHFS3
-WIP:
-Self Hosters: 
-A PR( https://github.com/selfhosters/unRAID-CA-templates/pull/531 ) has been created via repo https://github.com/bmartino1/unRAID-CA-templates
-for https://github.com/selfhosters/unRAID-CA-templates
 
