@@ -42,7 +42,7 @@ openssl req -x509 -newkey rsa:4096 -keyout /mnt/user/appdata/hfs-docker/certs/ps
 
 ![image](https://github.com/user-attachments/assets/abec5b56-3d1c-4d1b-947c-c2160d95b728)
 ![image](https://github.com/user-attachments/assets/8e89eb1f-20b5-4b58-873e-a7e9d97e5404)
-WIP for a docker varaible: https://github.com/rejetto/hfs/discussions/792 
+docker varaible now set in copoase file see: https://github.com/rejetto/hfs/discussions/792 
 
 6. Review HFS Support on github: https://github.com/rejetto/hfs/discussions
 7. Review unraid Docker Support on Unraid: WIP (?UnRaid Forum link Comming Soon?)
