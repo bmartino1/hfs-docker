@@ -1,6 +1,6 @@
 services:
   hfs:
-    image: rejetto/hfs:v0.53.0
+    image: rejetto/hfs:latest
     container_name: HFS3
     hostname: HFS3 # Set container hostname for slef cert
     mac_address: 02:42:c0:a8:02:D4 # Optional Set custom MacVlan MAC Address Example...
@@ -21,7 +21,7 @@ services:
       - HFS_LOG_ROTATION=weekly # log rotation frequency
       - HFS_HTTPS_PORT=443 # https port configuration
       - HFS_FORCE_HTTPS=true # force HTTPS traffic
-      - HFS_ADMIN_NET=192.168.210/24 # limit admin access to local network
+      - HFS_ADMIN_NET=192.168.1.0/24 # limit admin access to local network
       - HFS_VFS={"source": "/app/myDisk"} #Sets VFS to files you want to share      
     ports:
       - 8080:8080
@@ -29,7 +29,7 @@ services:
       - 443:443
     networks:
       bond0: #confirm your Unriad Network
-        ipv4_address: 192.168.2.50 #Set a static IP
+        ipv4_address: 192.168.1.50 #Set a static IP
     labels: #Unraid Docker Compose
       net.unraid.docker.webui: http://[IP]:[PORT:80]/~/admin/
       net.unraid.docker.icon: '/mnt/user/Dockers/hfs-docker/hfs.png'
