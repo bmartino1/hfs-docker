@@ -22,7 +22,7 @@ services:
       - HFS_HTTPS_PORT=443 # https port configuration
       - HFS_FORCE_HTTPS=true # force HTTPS traffic
       - HFS_ADMIN_NET=192.168.1.0/24 # limit admin access to local network
-      - HFS_VFS={"source": "/app/myDisk"} #Sets VFS to files you want to share      
+      - 'HFS_VFS={"source": "/app/myDisk"}' #Sets VFS to files you want to share      
     ports:
       - 8080:8080
       - 80:80
