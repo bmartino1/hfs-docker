@@ -16,8 +16,8 @@ The default hfs cwd of the container is `/home/hfs/.hfs`
 2. Git clone the repo
 ```
 cd /mnt/user/appdata
-git clone https://github.com/bmartino1/hfs-docker.git
-cd hfs-docker
+git clone [https://github.com/bmartino1/hfs-docker.git](https://github.com/bmartino1/hfs-docker-Unraid-DC.git)
+cd hfs-docker-Unraid-DC
 chmod -R 777 *
 ```
 3. Unraid Web Ui > Docker Tab
